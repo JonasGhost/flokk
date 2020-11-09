@@ -5,9 +5,7 @@ A fresh and modern Google Contacts manager that integrates with GitHub and Twitt
 - Web: https://flokk.app
 - Linux: https://snapcraft.io/flokk-contacts
 - macOS: https://flokk.app/macos/Flokk_Contacts_v1.0.1.dmg
-- Windows: https://flokk.app/windows/Flokk_Contacts_v1.0.1.zip
-  - Requires the [Visual Studio C++ Redist 2015 pack](https://www.microsoft.com/en-us/download/details.aspx?id=52685) to be installed. See issue [#15](https://github.com/gskinnerTeam/flokk/issues/15) for details.
-  - Note that as of July 10, 2020 Flutter for Windows is currently in Technical Preview and this will not be an issue in the future.
+- Windows: https://flokk.app/windows/flokk-v1.0.1-signed.zip
   
 ## Contributing
 
@@ -21,7 +19,7 @@ Please note that although we are monitoring GitHub issues, we aren't actively ma
 
 - Follow the install instructions here: https://flutter.dev/docs/get-started/install
   - Desktop-specific info: https://flutter.dev/desktop, https://github.com/flutter/flutter/wiki/Desktop-shells
-- Flokk was built on the bleeding edge of Flutter, so make sure to use the `master` branch in their git repo and checkout commit `9c3f0faa6d`.
+- Flokk was built on the bleeding edge of Flutter, so make sure to use the `master` branch in their git repo and checkout commit `9c3f0faa6d` for Web, Linux, and macOS builds, or `78929661fb` for Windows builds.
   - We're aiming to upgrade to an official Flutter version soon to make this easier.
 
 ### 2. Add Required API Keys
@@ -58,7 +56,7 @@ For more information, see https://github.com/Rob--W/cors-anywhere
 If you simply want to see the app running, it is possible to run the app using cached data:
 - Run the app at least once, to create your data folders
 - Extract the _contents_ of /sample_data.zip to the newly created data folder on your machine:
-  - Windows: \Users\\[USER]\AppData\Roaming\Flokk Contacts
+  - Windows: \Users\\[USER]\AppData\Roaming\flokk
   - Linux: $HOME/.local/share/flokk-contacts
   - macOS: /Users/[USER]/Library/Containers/app.flokk/Data/Library/Application Support/app.flokk
 - Overwrite any files that are there
