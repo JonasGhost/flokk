@@ -24,7 +24,7 @@ class UrlLauncher {
     if (value == null) return;
     value =
         RegExp(r"([\d+])").allMatches(value).map((m) => m.group(0)).join("");
-    open("telx:$value");
+    open("tel:$value");
   }
 
   static void openEmail(String value) {
